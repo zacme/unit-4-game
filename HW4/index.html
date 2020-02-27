@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Collector</title>
+<!--Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+<!--Title-->
+        <div class= "jumbotron">
+            <div class= "container">
+                <h1 class="text-center">
+                    Crystal Collector
+                </h1>
+            </div>
+        </div>
+<!--First Row-->
+<!--Instructions-->
+        <div class="row">
+            <div class= col-lg-12>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel title text-center"> Instructions</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            There will be four crystals displayed as buttons on the page.
+                            The player will be shown a random number at the start of the game.
+                            When the player clicks on a crystal, it will add a specific amount of points to the player's total score.
+                            Your game will hide this amount until the player clicks a crystal.
+                            When they do click one, update the player's score counter.
+                            The player wins if their total score matches the random number from the beginning of the game.
+                            The player loses if their score goes above the random number.
+                            The game restarts whenever the player wins or loses.
+                            When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
+                            The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Next row-->
+        <div class="row">
+<!--Target Score-->
+            <div class="col-lg-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Target Score</h3>
+                    </div>
+                    <div class="panel body">
+                        <h3 class="text-center" id="targetScore">89</h3>
+                    </div>
+                </div>
+            </div>
+<!--Your Scoreboard-->
+            <div class="col-lg-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+
+                        <h3 class="panel-title text-center">Your Score</h3>
+                    </div>
+                    <div class="panel body">
+                        <h3 class="text-center" id="yourScore">67</h3>
+                    </div>
+                </div>
+<!--Crystal Selection and pictures-->
+            </div>
+            <div class="col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+
+                        <h3 class="panel-title text-center">Crystal Selection</h3>
+                    </div>
+                    <div class="panel body text-center">
+<!--Blue crystal-->
+                        <img src = "assets/images/blue-crystal.jpg" alt= "" width="60px" height="60px" id="blue">
+<!--Green Crystal-->
+                        <img src = "assets/images/green-crystal.jpg" alt= ""width="60px" height="60px" id="green">
+<!--Red Crystal-->
+                    <img src = "assets/images/red-crystal.jpg" alt= ""width="60px" height="60px" id="red">
+<!--Yellow Crystal-->
+                    <img src = "assets/images/yellow-crystal.jpg" alt= ""width="60px" height="60px" id="yellow">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Next Row-->
+        <div class = "row">
+<!--Win Row-->
+            <div class = "col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Win Count</h3>
+                    </div>
+                    <div class="panel body">
+                        <h3 class="text-center">0</h3>
+                    </div>
+                </div>
+            </div>
+<!--Loss Row-->
+            <div class = "col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Loss Count</h3>
+                    </div>
+                    <div class="panel body">
+                        <h3 class="text-center">0</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src= "assets/game.js"></script>
+</body>
+</html>
